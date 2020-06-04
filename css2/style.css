@@ -1,0 +1,283 @@
+
+:root {
+  --flatgreen: #4dc545;
+  --darkcolor: #222222;
+    --navbarcolor: #115d8e;
+  --headerbg: url('../img/header-bg.jpg');
+  --fontused: 'Yantramanav', sans-serif, Helvetica, Arial, sans-serif;
+    --aboutusbg: url('../img/aboutus-bg.jpg');
+}
+
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: var(--fontused);
+}
+
+.cont_principal2 {
+   background-image: url('../img/section-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    height: 1700px;
+}
+
+.cont_principal {
+   background-image: url('../img/section-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    height: 900px;
+}
+
+.cont_centrar {
+    
+  position: absolute;
+  width:320px;
+  left:50%;
+  top:50%;
+  margin-left: -260px;
+  margin-top: -260px;
+}
+
+.cont_centrar {
+  position: absolute;
+    padding: 50px;
+  width: 520px;
+  float: left;
+  background-image: linear-gradient(180deg, #FFFFFF 60%, transparent 100%);
+
+  border-radius: 8px;
+transition: all 0.5s;
+}
+
+.cent_active {
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.21);
+}
+
+
+.cont_tabs_login {
+position: relative;
+  float: left;
+  width: 100%;
+}
+
+.ul_tabs > li { 
+position: relative;
+  float: left;
+  width: 50%;
+  list-style: none;
+  text-align: center;
+
+}
+
+.ul_tabs > li > a  {  
+text-decoration: none;
+font-family: Helvetica;
+font-size: 16px;
+    color: #999;
+line-height: 14px;
+padding: 30px ;
+display: block;
+transition: all 0.5s;
+}
+
+  .ul_tabs > .active > a  {  
+color: var(--flatgreen);
+
+}
+
+.linea_bajo_nom {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: var(--flatgreen);
+  height: 2px;
+}
+
+.active .linea_bajo_nom {
+  position: relative;
+  width: 100%;
+  float: left;
+background-color: #4dc545;
+height: 2px;
+}
+
+.cont_text_inputs {
+position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input_form_sign {
+  position: relative;
+  float: left;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid var(--flatgreen);
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.5s;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;  
+opacity: 0;
+display: none;
+}
+
+
+.form-control{
+    padding: 10px;
+}
+
+
+.input_form_sign:focus {
+  border-bottom: 1px solid var(--flatgreen) ;}
+
+.link_forgot_pass {
+position: relative;
+  margin-top: 0px;
+  margin-left: 10%;
+  text-decoration: none;
+  color: #999;
+  font-size: 13px;
+  display: none;
+  float: left;
+  transition: all 0.5s;
+}
+.cont_btn {
+  position: relative;
+  float: left;
+    margin: 30px;
+}
+
+.btn_sign {
+  background: var(--flatgreen);
+  border-radius: 8px;
+  padding: 15px 30px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  position: relative;  
+  float: left;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.terms_and_cons {
+  width: 70%;  
+  color: #999;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+
+.d_none {
+  display: none;
+}
+
+.d_block {
+  display: block;
+}
+
+.cont_text_inputs > input:nth-child(1){
+  transition-delay: 0.1s;
+}
+
+.cont_text_inputs > input:nth-child(2){
+  transition-delay: 0.2s;
+}
+.cont_text_inputs > input:nth-child(3){
+  transition-delay: 0.3s;
+}
+.cont_text_inputs > input:nth-child(4){
+  transition-delay: 0.4s;
+}
+
+
+@media (max-width: 768px) {
+    .cont_principal2 {
+   background-image: url('../img/section-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    height: 1700px;
+}
+
+.cont_principal {
+   background-image: url('../img/section-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    height: 900px;
+}
+
+.cont_centrar {
+    
+  position: absolute;
+  width:120px;
+  left:0%;
+  top:50%;
+  margin-left: -260px;
+  margin-top: -260px;
+}
+
+.cont_centrar {
+  position: absolute;
+    padding: -550px;
+  width: 10px;
+  float: left;
+  background-image: linear-gradient(180deg, #FFFFFF 60%, transparent 100%);
+
+  border-radius: 8px;
+transition: all 0.5s;
+}
+
+.cent_active {
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.21);
+}
+
+.input_form_sign {
+  position: relative;
+  float: left;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid var(--flatgreen);
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.5s;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;  
+opacity: 0;
+display: none;
+}
+
+
+.form-control{
+    padding: 10px;
+}
+
+}
+ 
